@@ -136,7 +136,7 @@ const BookSlot = () => {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="9876543210"
+                  placeholder=""
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 outline-none"
