@@ -371,7 +371,7 @@ const TrackDetails = () => {
             to="/#mentors"
             className="px-8 py-3 bg-blue-600 text-white rounded-xl font-medium shadow-md hover:bg-blue-700 hover:scale-105 transition-all duration-300"
           >
-            Explore Mentors
+            Book Your Slot
           </HashLink>
 
           <Link
