@@ -30,10 +30,10 @@ app.use(
 app.use(cookieParser());
 
 app.use(
-    cors({
-        origin: "guiders-town-git-main-suraj-pandeys-projects-07effe91.vercel.app",
-        credentials: true,
-    })
+  cors({
+    origin: "https://guiders-town-git-main-suraj-pandeys-projects-07effe91.vercel.app",
+    credentials: true,
+  })
 );
 
 /* ==========================
