@@ -31,7 +31,7 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "guiders-town-bqngz4gqx-suraj-pandeys-projects-07effe91.vercel.app",
         credentials: true,
     })
 );
