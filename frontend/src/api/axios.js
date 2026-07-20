@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://guiderstown.onrender.com",
+  baseURL: "https://guiderstown.onrender.com/api",
   withCredentials: true,
 });
 
