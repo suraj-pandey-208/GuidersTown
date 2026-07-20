@@ -270,7 +270,7 @@ const MyBookings = () => {
         ) && (
           <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-4 text-blue-800">
             <p className="font-medium">
-              📩 Your booking request has been received.
+               Your booking request has been received.
             </p>
 
             <p className="mt-1 text-sm text-blue-700">
