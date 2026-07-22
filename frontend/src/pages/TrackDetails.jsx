@@ -1,6 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { LaptopMinimal } from "lucide-react";
+import {
+  LaptopMinimal,
+  CalendarDays,
+  Users,
+} from "lucide-react";
 
 const tracks = {
   "open-source": {
@@ -224,47 +228,61 @@ const TrackDetails = () => {
 
         {/* Stats */}
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-            <div className="text-5xl mb-5">📅</div>
+      {/* Stats */}
 
-            <h3 className="text-2xl font-semibold">Duration</h3>
+<div className="grid md:grid-cols-3 gap-8 mb-16">
+  <div className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+    <div className="mb-5">
+      <CalendarDays
+        size={52}
+        className="text-gray-700"
+        strokeWidth={1.7}
+      />
+    </div>
 
-            <p className="text-gray-600 mt-2 text-lg">
-              15 Days
-            </p>
-          </div>
+    <h3 className="text-2xl font-semibold">Duration</h3>
 
-          <div className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-            <div className="mb-5">
-              <LaptopMinimal
-                size={52}
-                className="text-gray-700"
-                strokeWidth={1.7}
-              />
-            </div>
+    <p className="text-gray-600 mt-2 text-lg">
+      15 Days
+    </p>
+  </div>
 
-            <h3 className="text-2xl font-semibold">
-              Live Sessions
-            </h3>
+  <div className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+    <div className="mb-5">
+      <LaptopMinimal
+        size={52}
+        className="text-gray-700"
+        strokeWidth={1.7}
+      />
+    </div>
 
-            <p className="text-gray-600 mt-2 text-lg">
-              3 Sessions
-            </p>
-          </div>
+    <h3 className="text-2xl font-semibold">
+      Live Sessions
+    </h3>
 
-          <div className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
-            <div className="text-5xl mb-5">👥</div>
+    <p className="text-gray-600 mt-2 text-lg">
+      3 Sessions
+    </p>
+  </div>
 
-            <h3 className="text-2xl font-semibold">
-              Batch Size
-            </h3>
+  <div className="bg-white p-8 rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300">
+    <div className="mb-5">
+      <Users
+        size={52}
+        className="text-gray-700"
+        strokeWidth={1.7}
+      />
+    </div>
 
-            <p className="text-gray-600 mt-2 text-lg">
-              20 Students
-            </p>
-          </div>
-        </div>
+    <h3 className="text-2xl font-semibold">
+      Batch Size
+    </h3>
+
+    <p className="text-gray-600 mt-2 text-lg">
+      20 Students
+    </p>
+  </div>
+</div>
 
         {/* Sessions */}
 
